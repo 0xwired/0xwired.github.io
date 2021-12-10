@@ -75,7 +75,7 @@
 
     $.ajax({
         type: "GET",
-        url: "./countries_enodes.csv",
+        url: "https://raw.githubusercontent.com/0xwired/0xwired.github.io/main/countries_enodes.csv",
         success: function (data) {
             $('body').append(arrayToTable(Papa.parse(data).data));
         }
